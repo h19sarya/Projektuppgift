@@ -1,0 +1,51 @@
+@media (max-width: 767.98px) {
+  .slider {
+    display: none;
+  }
+  .navbar {
+    display: none;
+  }
+
+  .mobile__menu {
+    display: contents;
+    background-image: linear-gradient(to right, #333, #777);
+    font-size: 1rem;
+    position: sticky;
+    top: 0;
+    width: 100%;
+  }
+  .mobile__listitems {
+      list-style: none; 
+      display: flex;
+    flex-direction: column;
+      
+  }
+
+  .mobile__menu button {
+    background-image: linear-gradient(to right, #333, rgb(0, 0, 0));
+    color: white;
+    font-size: 1rem;
+    width: 100%;
+    justify-content: start;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+  }
+  .mobile__navbar {
+    display: none;
+  }
+  button + nav.mobile__navbar:active,
+  button:focus + nav.mobile__navbar {
+    display: contents;
+  }
+  nav.mobile__navbar li a {
+    background-color: black;  
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;  
+  }
+  ul li a.active {
+    background-color:red;
+}
+
+}
